@@ -4,50 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summary</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bebas-neue-webfont@1.2.0/css/webfont.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <div>
+
+
+    <div class="top-bar">
+        <div class="top-contact">
             <p>Contact our Customer</p>
             <div>
-                <img src="" alt="">
+                <img src="assets/Phone.svg" alt="Phone icon">
                 <p>(800) 333-3567</p>
             </div>
             <ul>
-                <li><a href="">About Us</a></li>
-                <li><a href="">contact Us</a></li>
-                <li><a href="">WHERE TO BUY</a></li>
+                <li><a class="information-navigation" href="">About Us</a></li>
+                <li><a class="information-navigation" href="">contact Us</a></li>
+                <li><a class="information-navigation" href="">WHERE TO BUY</a></li>
             </ul>
-            <p>Promo message area - shipping advantages, special offers…</p>
-            <div>
-                <img src="" alt="">
-                <p>SIGN IN</p>
-            </div>
+        </div>
+        <p>Promo message area - shipping advantages, special offers…</p>
+        <div>
+            <img src="assets/Person.svg" alt="Person icon">
+            <p>SIGN IN</p>
         </div>
     </div>
-    <header>
-        <img src="" alt="">
-        <a href="">SOFT TOP PRODUCTS</a>
-        <a href="">JEEP ACCESSORIES</a>
+
+
+
+    <header class="main-header">
+        <img src="assets/MainLogo.svg" alt="Main logo">
+        
+        <ul class="products">
+            <li><a href="">SOFT TOP <br> PRODUCTS</a></li>
+            <li><a href="">JEEP <br> ACCESSORIES</a></li>
+        </ul>
+
 
         <div>
-            <input type="text">
-            <img src="" alt="">
+            <div class="search-bar">
+                <input type="text" placeholder="Search entire store here…">
+                <img src="assets/Search.svg" alt="">
+            </div>
+            <button class="cart">
+                <div class="cart-btn">
+                    <img id="cart-img" src="assets/shopping-cart.svg" alt="">
+                    <p>MY CART</p>
+                    <img id="arrow-down-img" src="assets/ArrowDown.svg" alt="">
+                </div>
+                <div class="number-items-btn">
+                    <p>2</p>
+                </div>
+            </button>
         </div>
-
-        <button>
-            <div>
-                <img src="" alt="">
-                <p>MY CART</p>
-                <img src="" alt="">
-            </div>
-            <div>
-                <p></p>
-            </div>
-        </button>
     </header>
 
-    <section>
+
+
+    <section class="main-section">
         <header>
             <h1>
                 SHOPPING CART
@@ -55,7 +70,55 @@
         </header>
         <div>
             <div>
-                <div></div>
+                <table>
+                    <thead>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>SUBTOTAL</th>
+                        <th></th>
+                    </thead>
+
+
+                    <tr>
+                        <td data-cell="item" class="item-data">
+                            <img src="assets/flip_top_frameless_.png" alt="">
+                            <div>
+                                <h5>Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</h5>
+                                <p><b>Color:</b> Black Denim</p>
+                            </div>
+                        </td>
+                        <td data-cell="qty" class="qty-data">
+                            <input type="text" placeholder="1">
+                        </td>
+                        <td data-cell="subtotal" class="subtotal-data">
+                            <p>$150.00</p>
+                        </td>
+                        <td class="action-data">
+                            <img src="assets/Edit.svg" alt="">
+                            <img src="assets/cancel.svg" alt="">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-cell="item" class="item-data">
+                            <img src="assets/flip_top_frameless_.png" alt="">
+                             <div>
+                                <h5>Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</h5>
+                                <p><b>Color:</b> Black Denim</p>
+                            </div>
+                        </td>
+                        <td data-cell="qty" class="qty-data">
+                            <input type="text" placeholder="1">
+                        </td>
+                        <td data-cell="subtotal" class="subtotal-data">
+                            <p>$150.00</p>
+                        </td>
+                        <td class="action-data">
+                            <img src="assets/Edit.svg" alt="">
+                            <img src="assets/cancel.svg" alt="">
+                        </td>
+                    </tr>
+                </table>
                 <div>
                     <div>
                         <input type="text">
@@ -71,56 +134,68 @@
                 </header>
                 <div>
                     <h4>ESTIMATE SHIPPING AND TAX</h4>
-                    <img src="" alt="">
+                    <button>
+                        <img src="assets/Cross.svg" alt="Cross icon">
+                    </button>
                 </div>
                 <div></div>
                 <div>
-                    <h4>SUBTOTAL</h4>
-                    <p>$150.00</p>
-                    <h4>SHIPPING <p>(Flat Rate - Fixed)</p></h4>
-                    <p>$5.00</p>
+                    <div class="subtotal">
+                        <h4>SUBTOTAL</h4>
+                        <div>
+                            <h4> SHIPPING </h4>
+                            <p>(Flat Rate - Fixed)</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>$150.00</p>
+                        <p>$5.00</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>
-                        ORDER TORTAL
-                    </h3>
-                    <p>$155.00</p>
+                <div class="total-aside">
+                    <div>
+                        <h3>
+                            ORDER TORTAL
+                        </h3>
+                        <p>$155.00</p>
+                    </div>
                     <button>PROCEED TO CHECKOUT</button>
-                    <a href="">CHECKOUT WITH MULTIPLE ADDRESSES</a>
+                    <div><a href="">CHECKOUT WITH MULTIPLE ADDRESSES</a></div>
                 </div>
             </aside>
         </div>
-        <footer>
-            <div>
-                <ul>
-                    <li>
-                        About Us
-                    </li>
-                    <li>
-                        CONTACT Us
-                    </li>
-                    <li>
-                        Search Terms
-                    </li>
-                    <li>
-                        Privacy and Cookie Policy
-                    </li>
-                    <li>
-                        Installation Videos
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <p>
-                    Contact our Customer Service 
-                </p>
-                <div>
-                    <img src="" alt="">
-                    <p>(800) 333-3567</p>
-                </div>
-            </div>
-        </footer>
     </section>
+
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    About Us
+                </li>
+                <li>
+                    CONTACT Us
+                </li>
+                <li>
+                    Search Terms
+                </li>
+                <li>
+                    Privacy and Cookie Policy
+                </li>
+                <li>
+                    Installation Videos
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p>
+                Contact our Customer Service 
+            </p>
+            <div>
+                <img src="" alt="">
+                <p>(800) 333-3567</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

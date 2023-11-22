@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    list-style-position: inside;
+}
+
+/* TOP BAR */
+
+.top-bar {
+    background-color: #2F2F2F;
+    color: #F5F5F5;
+    width: 100%;
+    height: 2.67rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.top-bar > div {    
+    display: inline-flex;
+    margin: 0.5rem 1rem;
+    align-items: center;
+}
+
+.top-contact {
+    font-weight: 400;
+    font-size: 0.78rem;
+    line-height: 1.34rem;
+    font-style: normal;
+}
+
+.top-contact > div {
+    display: inline-flex;
+    margin: 0.5rem 1rem;
+    align-items: center;
+}
+
+
+.top-bar > p {
+    font-weight: 400;
+    font-size: 0.78rem;
+    line-height: 1.34rem;
+    font-style: normal;
+}
+
+.top-bar > div > p {
+    font-weight: 400;
+    line-height: 1.34rem;
+    font-style: normal;
+}
+
+.top-contact > div > p {
+    font-weight: 700;
+}
+
+.top-contact > ul {
+    font-weight: 700;
+}
+
+.top-contact > ul > li {
+    white-space: nowrap;
+    padding-right: 1rem;
+    font-size: 0.72rem;
+    line-height: 0.89rem;
+}
+
+
+.information-navigation {
+    color: white;
+    text-decoration: underline;
+}
+
+.top-bar img {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* MAIN HEADER */
+
+.main-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 5.33rem;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    line-height: 1.33rem;
+    box-shadow: 0px 0.22rem 1.33rem 0px rgba(0, 0, 0, 0.16);
+}
+
+.main-header img {
+    height: 2rem;
+}
+
+.products {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+.products > li {
+    margin-right: 20px;
+    background-image: url(assets/Line.svg);
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+}
+
+.products > li > a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: #2F2F2F;
+    font-size: 1.33rem;
+}
+
+.main-header > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    border: 2px solid #2F2F2F;
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 2.67rem;
+}
+
+.search-bar input {
+    border: 0;
+    padding: 0.5rem;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 0.78rem;
+}
+
+.search-bar img {
+    height: 0.89rem;
+    width: 0.89rem;
+    padding: 0.5rem;
+}
+
+.cart {
+    background-color: #008421;
+    position: relative;
+}
+
+.cart-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.cart-btn > img {
+    padding: 0.2rem;
+    margin: 0.5rem;
+}
+
+.cart-btn > p {
+    white-space: nowrap;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.33rem;
+    color: #F5F5F5;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+}
+
+#cart-img {
+    height: 1rem;
+    width: 1rem;
+}
+
+#arrow-down-img {
+    height: 0.6rem;
+    width: 0.6rem;
+}
+
+.number-items-btn {
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    width: 1.33rem;
+    height: 1.33rem;
+    font-family: 'Titillium Web', sans-serif;
+    position: absolute;
+    top: -1.11rem;
+    right: 0px;
+}
+
+
+/* MAIN SECTION */
+
+h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+    line-height: 3.56rem;
+    letter-spacing: -5px;
+}
+
+.main-section > div {
+    display: flex;
+}
+
+th {
+    text-align: start;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.33rem;
+    font-weight: 700;
+    font-size: 0.78rem;;
+}
+
+.item-data {
+    display: flex;
+}
+
+h5 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.33rem;
+    text-transform: uppercase;
+    color: #2F2F2F;
+}
+
+.qty-data > input {
+    border: 2px solid #2F2F2F;;
+}
+
+.subtotal-data > p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0.78rem;
+    text-transform: uppercase;
+    color: #2F2F2F;
+}
+
+.action-data {
+    display: flex;
+}
+
+/* ASIDE */
+
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.22rem;
+    font-weight: 700;
+    line-height: 2.22rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    line-height: 1.33rem;
+    text-transform: uppercase;
+    color: #2F2F2F;
+}
+
+.subtotal > div {
+    display: flex;
+}
+
+.subtotal > div > p {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    line-height: 1.33rem;
+    color: #2F2F2F;
+    font-size: 0.78rem;
+}
+
+aside > div {
+    background-color: #F5F5F5;
+    display: flex;
+}
+
+aside > div > div > p {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    line-height: 1.33rem;
+    color: #2F2F2F;
+    font-size: 0.78rem;
+}
+
+.total-aside {
+    display: block;
+}
+
+.total-aside > div {
+    display: flex;
+}
+
