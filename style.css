@@ -255,6 +255,7 @@ hr {
 
 .main-header__input {
     border: none;
+    outline: none;
     width: 100%;
     padding: 12px;
     font-size: 14px;
@@ -262,6 +263,16 @@ hr {
     font-family: 'Titillium Web', sans-serif;
     color: #828282;
 }
+
+.main-header__input:focus,
+.main-header__input:not(:placeholder-shown) {
+    color: #2F2F2F;
+}
+
+.main-header__search-bar:hover {
+    border-color: rgba(46, 46, 46, 0.1);
+}
+
 
 .main-header__input__img {
     height: 0.89rem;
@@ -275,6 +286,10 @@ hr {
     width: 143px;
     height: 48px;
     margin-left: 12px;
+}
+
+.main-header__button:hover {
+    background-color: rgba(0, 133, 33, 0.8);
 }
 
 .main-header__cart {
@@ -461,6 +476,10 @@ hr {
     height: 48px;
 }
 
+.main-section__button:hover {
+    background-color: rgba(46, 46, 46, 0.9);
+}
+
 .main-section__bottom-div {
     border: 2px solid #2F2F2F;
 }
@@ -473,6 +492,10 @@ hr {
     background-color: white;
 }
 
+.main-section__button-apply:hover {
+    background-color: #F5F5F5;
+}
+
 .main-section__cupon {
     color: #828282;
     width: 295px;
@@ -480,6 +503,12 @@ hr {
     padding: 0 18px;
     border: none;
     border-right: 2px solid #2F2F2F;
+    outline: none;
+}
+
+.main-section__cupon:focus,
+.main-section__cupon:not(:placeholder-shown) {
+    color: #2F2F2F;
 }
 
 @media screen and (max-width: 426px) {
@@ -779,6 +808,9 @@ td {
     height: 56px;
 }
 
+.aside__button:hover {
+    background-color: rgba(0, 133, 33, 0.8);
+}
 
 #show-form-btn img {
     width: 16px;
@@ -865,6 +897,7 @@ form {
     width: 100%;
 }
 
+
 .form__options,
 .form__input,
 .form__label {
@@ -895,9 +928,9 @@ form {
 }
 
 .form__input-text {
-    width: 99%;
+    width: 95%;
     font-weight: 400;
-    padding: 12px 1px;
+    padding: 12px 5px;
 }
 
 .form__radio {
