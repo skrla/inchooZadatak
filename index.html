@@ -1,201 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summary</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bebas-neue-webfont@1.2.0/css/webfont.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color">
+        <title>Summary</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
 
 
-    <div class="top-bar">
-        <div class="top-contact">
-            <p>Contact our Customer</p>
+        <div class="top-bar">
+            <div class="top-bar__div">
+                <p>Contact our Customer</p>
+                <div class="top-bar__div top-bar__div--margin">
+                    <img id="phone-icon" src="assets/phone.svg" alt="Phone icon">
+                    <p class="top-bar--bold">(800) 333-3567</p>
+                </div>
+                <ul>
+                    <li class="top-bar__list-item"><a href="#">About Us</a></li>
+                    <li class="top-bar__list-item"><a href="#">contact Us</a></li>
+                    <li class="top-bar__list-item"><a href="#">WHERE TO BUY</a></li>
+                </ul>
+            </div>
             <div>
-                <img src="assets/Phone.svg" alt="Phone icon">
-                <p>(800) 333-3567</p>
+            <p>Promo message area - shipping advantages, special offers…</p>
             </div>
-            <ul>
-                <li><a class="information-navigation" href="">About Us</a></li>
-                <li><a class="information-navigation" href="">contact Us</a></li>
-                <li><a class="information-navigation" href="">WHERE TO BUY</a></li>
-            </ul>
-        </div>
-        <p>Promo message area - shipping advantages, special offers…</p>
-        <div>
-            <img src="assets/Person.svg" alt="Person icon">
-            <p>SIGN IN</p>
-        </div>
-    </div>
-
-
-
-    <header class="main-header">
-        <img src="assets/MainLogo.svg" alt="Main logo">
-        
-        <ul class="products">
-            <li><a href="">SOFT TOP <br> PRODUCTS</a></li>
-            <li><a href="">JEEP <br> ACCESSORIES</a></li>
-        </ul>
-
-
-        <div>
-            <div class="search-bar">
-                <input type="text" placeholder="Search entire store here…">
-                <img src="assets/Search.svg" alt="">
+            <div class="top-bar__div ">
+                <img class="top-bar__img" src="assets/person.svg" alt="Person icon">
+                <p id="sign-in-btn" class="button__text">SIGN IN</p>
             </div>
-            <button class="cart">
-                <div class="cart-btn">
-                    <img id="cart-img" src="assets/shopping-cart.svg" alt="">
-                    <p>MY CART</p>
-                    <img id="arrow-down-img" src="assets/ArrowDown.svg" alt="">
-                </div>
-                <div class="number-items-btn">
-                    <p>2</p>
-                </div>
-            </button>
         </div>
-    </header>
 
 
 
-    <section class="main-section">
-        <header>
-            <h1>
-                SHOPPING CART
-            </h1>
-        </header>
-        <div>
-            <div>
-                <table>
-                    <thead>
-                        <th>Item</th>
-                        <th>Qty</th>
-                        <th>SUBTOTAL</th>
-                        <th></th>
-                    </thead>
+        <header class="main-header">
 
-
-                    <tr>
-                        <td data-cell="item" class="item-data">
-                            <img src="assets/flip_top_frameless_.png" alt="">
-                            <div>
-                                <h5>Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</h5>
-                                <p><b>Color:</b> Black Denim</p>
-                            </div>
-                        </td>
-                        <td data-cell="qty" class="qty-data">
-                            <input type="text" placeholder="1">
-                        </td>
-                        <td data-cell="subtotal" class="subtotal-data">
-                            <p>$150.00</p>
-                        </td>
-                        <td class="action-data">
-                            <img src="assets/Edit.svg" alt="">
-                            <img src="assets/cancel.svg" alt="">
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td data-cell="item" class="item-data">
-                            <img src="assets/flip_top_frameless_.png" alt="">
-                             <div>
-                                <h5>Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</h5>
-                                <p><b>Color:</b> Black Denim</p>
-                            </div>
-                        </td>
-                        <td data-cell="qty" class="qty-data">
-                            <input type="text" placeholder="1">
-                        </td>
-                        <td data-cell="subtotal" class="subtotal-data">
-                            <p>$150.00</p>
-                        </td>
-                        <td class="action-data">
-                            <img src="assets/Edit.svg" alt="">
-                            <img src="assets/cancel.svg" alt="">
-                        </td>
-                    </tr>
-                </table>
+            <div class="main-header__menu">
                 <div>
-                    <div>
-                        <input type="text">
-                        <button>APPLY</button>
-                    </div>
-
-                    <button>update shopping cart</button>
-                </div>
-            </div>
-            <aside>
-                <header>
-                    <h2>SUMMARY</h2>
-                </header>
-                <div>
-                    <h4>ESTIMATE SHIPPING AND TAX</h4>
-                    <button>
-                        <img src="assets/Cross.svg" alt="Cross icon">
+                    <button class="main-header__menu-btn" onclick="openMenu()">
+                        <img src="assets/menu.svg" alt="Menu Icon">
                     </button>
                 </div>
-                <div></div>
-                <div>
-                    <div class="subtotal">
-                        <h4>SUBTOTAL</h4>
-                        <div>
-                            <h4> SHIPPING </h4>
-                            <p>(Flat Rate - Fixed)</p>
-                        </div>
-                    </div>
-                    <div>
-                        <p>$150.00</p>
-                        <p>$5.00</p>
-                    </div>
-                </div>
-                <div class="total-aside">
-                    <div>
-                        <h3>
-                            ORDER TORTAL
-                        </h3>
-                        <p>$155.00</p>
-                    </div>
-                    <button>PROCEED TO CHECKOUT</button>
-                    <div><a href="">CHECKOUT WITH MULTIPLE ADDRESSES</a></div>
-                </div>
-            </aside>
-        </div>
-    </section>
-
-    <footer>
-        <div>
-            <ul>
-                <li>
-                    About Us
-                </li>
-                <li>
-                    CONTACT Us
-                </li>
-                <li>
-                    Search Terms
-                </li>
-                <li>
-                    Privacy and Cookie Policy
-                </li>
-                <li>
-                    Installation Videos
-                </li>
+                <img class="main-header__img" src="assets/mainLogo.svg" alt="Main logo">
+            </div>
+            <ul class="main-header__list">
+                <li class="main-header__list-item"><a href="#">SOFT TOP <br> PRODUCTS</a></li>
+                <li class="main-header__list-item"><a href="#">JEEP <br> ACCESSORIES</a></li>
             </ul>
-        </div>
-        <div>
-            <p>
-                Contact our Customer Service 
-            </p>
-            <div>
-                <img src="" alt="">
-                <p>(800) 333-3567</p>
+
+
+            <div class="main-header__data">
+                <button class="main-header__search-btn">
+                    <img src="assets/searchActive.svg" alt="Search Icon">
+                </button>
+                <div class="main-header__search-bar">
+                    <input class="main-header__input" type="text" placeholder="Search entire store here…">
+                    <img class="main-header__input__img" src="assets/search.svg" alt="Search icon">
+                </div>
+                <button class="main-header__button">
+                    <div class="main-header__cart">
+                        <img id="cart-img" class="main-header__button-img" src="assets/shoppingCart.svg" alt="Cart icon">
+                        <p class="button__text main-header__text">MY CART</p>
+                        <img id="arrow-down-img" class="main-header__button-img" src="assets/arrowDown.svg" alt="Arrow down icon">
+                    </div>
+                    <div class="main-header__number-items">
+                        <p>2</p>
+                    </div>
+                </button>
+            </div>
+
+        </header>
+
+        <div id="hamburgerMenuItems">
+            <div class="main-header__menu-item">
+                <a href="#">SOFT TOP PRODUCTS</a>
+            </div>
+            <div class="main-header__menu-item">
+                <a href="#">JEEP ACCESSORIES</a>
             </div>
         </div>
-    </footer>
 
-</body>
+        <section class="main-section">
+            <header>
+                <h1 class="main-section__title">
+                    SHOPPING CART
+                </h1>
+            </header>
+            <div class="main-section__main-data">
+                <div>
+                    <table>
+                        <thead>
+                            <tr class="table__row table--no-box-shadow">
+                                <th>Item</th>
+                                <th class="table--center">Qty</th>
+                                <th class="table--center">SUBTOTAL</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+
+                        <tr class="table__row">
+                            <td data-cell="item" class="table__item-data">
+                                <div class="table__item-img">
+                                    <img data-cell="item" class="table__img" src="assets/flipTopFrameless.png" alt="Car image">
+                                </div>
+                                <div data-cell="item" class="table__item-description">
+                                    <h4>Flip Top™ Complete Replacement Soft Top, Jeep 1976-1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</h4>
+                                    <p><b>Color:</b> Black Denim</p>
+                                </div>
+                            </td>
+                            <td class="table__qty" data-cell="qty">
+                                <div class="table__title">
+                                    <p class="table--bold">Qty</p>
+                                </div>
+                                <div class="table__input-cell">
+                                    <input class="table__input" type="text" placeholder="1">
+                                </div>
+                            </td>
+                            <td class="table__subtotal" data-cell="subtotal">
+                                <div class="table__title">
+                                    <p class="table--bold">SUBTOTAL</p>
+                                </div>
+                                <div class="table__subtotal-text">
+                                    <p class="table__subtotal-data">$150.00</p>
+                                </div>
+                            </td>
+                            <td data-cell="item" class="table__action-cell">
+                                <div class="table__action">
+                                    <img src="assets/edit.svg" alt="Edit icon">
+                                    <img src="assets/cancel.svg" alt="Cancel icon">
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="table__row">
+                            <td data-cell="item" class="table__item-data">
+                                <img class="table__img" src="assets/flipTopFrameless.png" alt="Car image">
+                                <div class="table__item-description">
+                                    <h4>Flip Top™ PREMIUM - Complete Replacement Soft Top, Jeep 1995 CJ-7/Wrangler, No doors included, Clear side and rear windows</h4>
+                                    <p><b>Color:</b> Black Denim, MATT</p>
+                                </div>
+                            </td>
+                            <td class="table__qty" data-cell="qty">
+                                <div class="table__title">
+                                    <p class="table--bold">Qty</p>
+                                </div>
+                                <div class="table__input-cell">
+                                    <input class="table__input" type="text" placeholder="1">
+                                </div>
+                            </td>
+                            <td class="table__subtotal" data-cell="subtotal">
+                                <div class="table__title">
+                                    <p class="table--bold">SUBTOTAL</p>
+                                </div>
+                                <div class="table__subtotal-text">
+                                    <p class="table__subtotal-data">$250.00</p>
+                                </div>
+                            </td>
+                            <td class="table__action-cell">
+                                <div class="table__action">
+                                    <img src="assets/edit.svg" alt="Edit icon">
+                                    <img src="assets/cancel.svg" alt="Cancel icon">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="main-section__main-data main-section__bottom-data">
+                        <div class="main-section__bottom-div">
+                            <input class="main-section__cupon" placeholder="Enter Discount Code" type="text">
+                            <button class="button__text button__text--secundary main-section__button-apply">APPLY</button>
+                        </div>
+
+                        <button class="button__text main-section__button">update shopping cart</button>
+                    </div>
+                </div>
+
+
+
+                <aside>
+                    <header>
+                        <h2 class="aside__title">SUMMARY</h2>
+                    </header>
+                    <div class="aside__data">
+                        <h5 id="estimate-shipping-txt" class="aside--margin-left aside--padding-top-bottom aside__small-title aside__small-title--big">
+                            ESTIMATE SHIPPING AND TAX
+                        </h5>
+                        <button id="show-form-btn" class="aside--padding-top-bottom aside--border-none aside--padding-right">
+                            <img id="cross-icon" src="assets/cross.svg" alt="Cross icon">
+                        </button>
+                    </div>
+                    <hr>
+                    <div>
+                        <form id="form">
+                            <div>
+                                <label class="form__label" for="country">Country</label>
+                                
+                                <div class="form__input">
+                                    <select class="form__select" name="country" id="country">
+                                        <option class="form__options" value="United States">United States</option>
+                                        <option class="form__options" value="Croatia">Croatia</option>
+                                        <option class="form__options" value="Germany">Germany</option>
+                                        <option class="form__options" value="UK">UK</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="form__label" for="state">State/Province</label>
+                                
+                                <div class="form__input">
+                                    <input class="form__input-text" type="text" name="state" id="state" placeholder="State/Province">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="form__label" for="zip">Zip/Postal Code</label>
+                                
+                                <div class="form__input">
+                                    <input class="form__input-text" type="text" name="zip" id="zip" placeholder="State/Province">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="form__label">Flat Rate</label>
+
+                                <div>
+                                    <label class="form__label" for="rate-fixed">
+                                        <input class="form__radio" type="radio" name="rate" id="rate-fixed" value="5.00" checked="true">
+                                        Fixed <span>($5.00)</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="aside__data aside--padding-top-bottom">
+                        <div class="aside--margin-left">
+                            <h5 class="aside__small-title">SUBTOTAL</h5>
+                            <div class="aside__shipping">
+                                <h5 class="aside__small-title">SHIPPING</h5>
+                                <p>&nbsp(Flat Rate - Fixed)</p>
+                            </div>
+                        </div>
+                        <div class="aside--text-align-right aside--padding-right">
+                            <p>$150.00</p>
+                            <p class="aside__shipping-price">$5.00</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="aside__data aside__data--block aside--padding-top-bottom">
+                        <div class="aside__data aside--padding-top-bottom">
+                            <h3 class="aside--margin-left aside__medium-title">
+                                ORDER TORTAL
+                            </h3>
+                            <div class="aside__summary-price">
+                                <p class="aside--text-align-right aside--bold aside--padding-right">$155.00</p>
+                            </div>
+                        </div>
+                        <div class="aside__data--block aside__button--padding">
+                            
+                            <div class="aside--flex">
+                                <button class="aside__button button__text button__text--big">PROCEED TO CHECKOUT</button>
+                            </div>
+                            <div class="aside--flex aside__link">
+                                <a href="#">CHECKOUT WITH MULTIPLE ADDRESSES</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <footer class="footer">
+
+            <div class="footer__copyright">
+                <p>© Jeep is a registered trademark of FCA US LLC.</p>
+            </div>
+
+            <div>
+                <ul class="footer__list">
+                    <li class="footer__list-item footer__list-item--decoration-none">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#">CONTACT Us</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#">Search Terms</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#">Privacy and Cookie Policy</a>
+                    </li>
+                    <li class="footer__list-item">
+                        <a href="#">Installation Videos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__data">
+                <p>
+                    Contact our Customer Service 
+                </p>
+                <div class="footer__data footer__data--direction">
+                    <img id="phone-icon" src="assets/phone.svg" alt="Phone icon">
+                    <p class="footer--bold footer--padding-left">(800) 333-3567</p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
 </html>
